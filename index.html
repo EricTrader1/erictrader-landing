@@ -3,225 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bots de trading institucional automatizados con IA para MetaTrader 4 y 5. Soluciones profesionales para traders serios.">
-  <meta name="keywords" content="trading, bots, MetaTrader, inteligencia artificial, EricTrader, forex, automatizado, MT4, MT5">
-  <meta name="author" content="Eric Cervantes">
-  <title>EricTrader | Bots de Trading Automatizado con Inteligencia Artificial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" href="favicon.ico">
-  <style>
-    :root {
-      --primary: #e63946;
-      --secondary: #f1c40f;
-      --dark: #121212;
-      --dark-gray: #1e1e1e;
-      --medium-gray: #2d2d2d;
-      --light-gray: #e0e0e0;
-      --white: #ffffff;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      background-color: var(--dark);
-      color: var(--light-gray);
-      font-family: 'Open Sans', sans-serif;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--dark-gray) 0%, #000000 100%);
-      padding: 30px 20px;
-      text-align: center;
-      border-bottom: 4px solid var(--primary);
-    }
-
-    header h1 {
-      color: var(--white);
-      font-size: 2.8rem;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 10px auto;
-      color: var(--light-gray);
-    }
-
-    .cta-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 25px;
-      background: var(--primary);
-      color: var(--white);
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .cta-btn:hover {
-      background: #c1121f;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 25px;
-      margin-top: 40px;
-    }
-
-    .product-card {
-      background: var(--dark-gray);
-      padding: 25px;
-      border-radius: 10px;
-      border-top: 4px solid var(--primary);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .product-card h2 {
-      color: var(--secondary);
-      font-size: 1.5rem;
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 15px;
-    }
-
-    .product-card p {
-      min-height: 80px;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--primary);
-      color: var(--white);
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #c1121f;
-    }
-
-    .highlight-banner {
-      background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
-      padding: 25px;
-      margin: 60px 0;
-      border-radius: 10px;
-      border-left: 4px solid var(--secondary);
-      text-align: center;
-    }
-
-    .highlight-banner h3 {
-      color: var(--secondary);
-      font-size: 1.5rem;
-    }
-
-    .promo-code {
-      background: rgba(241, 196, 15, 0.2);
-      color: var(--secondary);
-      padding: 8px 15px;
-      margin: 10px 0;
-      display: inline-block;
-      border-radius: 5px;
-      border: 1px dashed var(--secondary);
-      font-family: monospace;
-      font-size: 1.2rem;
-    }
-
-    .highlight-banner .btn {
-      background: var(--secondary);
-      color: #000;
-      margin-top: 10px;
-    }
-
-    .highlight-banner .btn:hover {
-      background: #f39c12;
-    }
-
-    .contact-section {
-      text-align: center;
-      margin: 50px 0;
-    }
-
-    .qr-code {
-      max-width: 180px;
-      margin: 15px auto;
-      border: 5px solid var(--medium-gray);
-      border-radius: 10px;
-    }
-
-    .payment-btn {
-      background-color: #ffc439;
-      color: #111;
-      padding: 12px 30px;
-      font-size: 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 15px 0;
-      display: inline-block;
-      transition: background 0.3s ease;
-    }
-
-    .payment-btn:hover {
-      background-color: #ffb10a;
-      transform: translateY(-2px);
-    }
-
-    .social-links a {
-      color: var(--light-gray);
-      font-size: 1.5rem;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: var(--primary);
-    }
-
-    footer {
-      background: linear-gradient(135deg, var(--dark-gray) 0%, #000000 100%);
-      padding: 30px 20px;
-      text-align: center;
-      border-top: 4px solid var(--primary);
-    }
-
-    footer a {
-      color: var(--secondary);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-      .products-grid { grid-template-columns: 1fr; }
-    }
-  </style>
+  <meta name="description" content="Bots de trading institucional automatizados con IA para MetaTrader 4 y 5.">
+  <title>EricTrader | Bots de Trading con IA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>ERIC TRADER</h1>
-    <p>Bots de Trading Automatizado con IA • MetaTrader 4/5</p>
-    <a href="#productos" class="cta-btn">Ver Bots Disponibles</a>
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding: 10px 20px;">
+      <img src="assets/eric-foto.png" alt="Eric Trader" style="height: 80px; border-radius: 50%; border: 3px solid var(--primary);">
+      <div style="text-align: center; flex: 1;">
+        <h1>ERIC TRADER</h1>
+        <p>Bots de Trading Automatizado con IA • MetaTrader 4/5</p>
+        <a href="#productos" class="cta-btn">Ver Bots Disponibles</a>
+      </div>
+      <img src="assets/logo-erictrader.png" alt="Logo Fénix" style="height: 80px;">
+    </div>
   </header>
 
   <main class="container" id="productos">
@@ -231,51 +27,29 @@
         <p>Bot automático multipar que opera +18 pares con confluencias institucionales (FVG, OB, Liquidez). Compatible con cuentas fondeadas.</p>
         <a href="https://cervantes07.gumroad.com/l/ccjsv" class="btn" target="_blank">Comprar Ahora</a>
       </div>
-
       <div class="product-card">
         <h2>QuantumX Infinity Pro 2025</h2>
         <p>Bot institucional adaptativo para XAUUSD, BTCUSD e índices. Sesiones, drawdown y gestión inteligente. Ideal para traders avanzados.</p>
         <a href="https://cervantes07.gumroad.com/l/towbpl" class="btn" target="_blank">Comprar Ahora</a>
       </div>
-
       <div class="product-card">
         <h2>NeuroX Infinity AI Pro</h2>
         <p>Bot inteligente de alto rendimiento que opera +40 pares, índices y metales con IA y lógica institucional. Potente para diversificar.</p>
         <a href="https://cervantes07.gumroad.com/l/neurox2025" class="btn" target="_blank">Comprar Ahora</a>
       </div>
     </section>
-
-    <section class="highlight-banner">
-      <h3>🚀 OFERTA EXCLUSIVA</h3>
-      <p>Compra 2 bots y obtén 30% de descuento en tu compra</p>
-      <div class="promo-code">FENIX2X30</div>
-      <a href="https://cervantes07.gumroad.com" class="btn" target="_blank">Aprovechar Oferta</a>
-    </section>
-
-    <section class="contact-section">
-      <h3>Conéctate directamente con EricTrader</h3>
-      <img src="https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=https://t.me/erictrader" alt="QR Telegram EricTrader" class="qr-code">
-      <div>
-        <a href="https://www.paypal.com/paypalme/erictraderbots" class="payment-btn" target="_blank">
-          <i class="fab fa-paypal"></i> Pagar con PayPal
-        </a>
-      </div>
-      <div class="social-links">
-        <a href="https://facebook.com/erictrader" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://t.me/erictrader" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://instagram.com/erictrader" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-    </section>
   </main>
+
+  <section class="contact-section">
+    <h3>Conéctate directamente con EricTrader</h3>
+    <img src="https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=https://t.me/erictrader"
+         alt="QR Telegram EricTrader"
+         class="qr-code"
+         style="display: block; margin: 20px auto; border: 5px solid var(--medium-gray); border-radius: 10px;">
+  </section>
 
   <footer>
     <p>© 2025 EricTrader. Todos los derechos reservados.</p>
-    <p>
-      <a href="mailto:ventas@erictrader.pro">ventas@erictrader.pro</a> |
-      <a href="terminos.html">Términos y Condiciones</a> |
-      <a href="privacidad.html">Política de Privacidad</a>
-    </p>
   </footer>
 </body>
 </html>
-
