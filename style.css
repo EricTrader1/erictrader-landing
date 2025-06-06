@@ -1,1 +1,69 @@
-/* CSS optimizado */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.producto, .promo {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+}
+
+h2, h3 {
+  color: #f33;
+}
+
+a.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 12px;
+  background-color: #e33;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+a.boton:hover {
+  background-color: #c00;
+}
+
+.autor {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.autor-foto {
+  border-r
